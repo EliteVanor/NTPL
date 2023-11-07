@@ -30,14 +30,17 @@ function revealDefinition() {
     }
 }
 
-function addNewWord(event) {
-    event.preventDefault();
+function addNewWord() {
     const newWord = document.getElementById("newWord").value;
     const newDefinition = document.getElementById("newDefinition").value;
     const wordList = document.getElementById("wordList");
-    const newEntry = document.createElement("li");
-    newEntry.innerHTML = `<strong>${newWord}:</strong> ${newDefinition}`;
-    wordList.appendChild(newEntry);
-    document.getElementById("newWord").value = "";
-    document.getElementById("newDefinition").value = "";
+
+    if (newWord && newDefinition) {
+        const newEntry = document.createElement("li");
+        newEntry.innerHTML = `<strong>${newWord}:</strong> ${newDefinition}`;
+        wordList.appendChild(newEntry);
+
+        document.getElementById("newWord").value = "";
+        document.getElementById("newDefinition").value = "";
+    }
 }
