@@ -1,29 +1,25 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    background-color: black;
-    background-image: url('1234.jpg');
+    background-color: lightblue;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    color: white; /* Set the text color to white for better visibility on the image background */
-    text-shadow: 2px 2px 2px black;
+    color: black;
     font-size: 24px; /* Adjust the font size as desired */
     font-weight: bold; /* Increase the font weight for better visibility */
 }
 
 h1 {
     margin-top: 30px;
-    color: white;
-    letter-spacing: 2px;
+    color: black;
 }
 
 #question {
     margin-top: 30px;
     font-size: 30px;
-    color: white;
-    letter-spacing: 2px;
+    color: black;
 }
 
 #question-button, #submit-button, #save-button {
@@ -32,7 +28,7 @@ h1 {
     font-size: 18px;
     border: none;
     background-color: #00adb5;
-    color: white;
+    color: black;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -54,7 +50,7 @@ h1 {
 #feedback, #saved-answer {
     margin-top: 30px;
     font-size: 24px;
-    color: white;
+    color: black;
 }
 
 #hint-button {
